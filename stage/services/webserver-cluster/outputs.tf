@@ -1,3 +1,3 @@
-output "elb_url" {
-  value = "${aws_elb.asg-elb.dns_name}"
+output "app_lb_address" {
+  value = "${module.webserver-cluster.elb_url}"
 }

@@ -5,9 +5,9 @@ provider "aws" {
 module "db" {
   source = "../../../modules/data-stores/mysql"
 
-  db_password      = "stage123456"
-  db_instance_name = "staging"
+  db_password      = "prod123456"
+  db_instance_name = "prod"
   db_instance_type = "db.t2.micro"
-  db_storage_size  = 5
-  db_access        = true
+  db_storage_size  = 7
+  db_access        = false
 }
